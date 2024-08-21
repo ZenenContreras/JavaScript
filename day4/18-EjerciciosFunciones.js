@@ -61,6 +61,22 @@ console.log(tomayusc(strings))
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
+array1 = [1,2,3,4,5]
+array2 = [1,2,3,4,5,6,7,8,9,10]
+
+
+function comunes(array1,array2){
+    let array3 = []
+    for(let i = 0; i< array1.length;i++){
+        if(array2.includes(array1[i])){
+            array3.push(array1[i])
+        }
+    }
+    return array3 
+}
+
+console.log(comunes(array1,array2))
+
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
