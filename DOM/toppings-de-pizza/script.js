@@ -30,7 +30,52 @@ console.log(rojo)
 
 const aceituna = document.querySelector("#aceitunas")
 const toppings = document.querySelector(".toppings")
+
 console.log(aceituna)
 console.log(toppings)
 
+const roppingRojo = document.querySelector(".toppings:not(.rojo)")
+
+console.log( roppingRojo)
+
 //Selecciona todos que cumpla con el criterio
+
+const toppingsAzul = document.querySelectorAll(".toppings.rojo")
+
+console.log(toppingsAzul)
+console.log(toppingsAzul[0])
+
+const primerTopping = document.querySelector(".toppings")
+console.log(primerTopping)
+
+primerTopping.style.backgroundColor = "blue"
+primerTopping.style.color = "#f1f1f1";
+primerTopping.style.textTransform = "uppercase"
+
+console.log(primerTopping.style)
+
+//Seleccionar el texto
+
+const listaToppings = document.getElementById("lista-toppings")
+console.log(listaToppings)
+console.log(listaToppings.innerText)
+
+//formato en el que esta en el documento. incluyendo los espacios
+
+console.log(listaToppings.textContent)
+
+//toda la estructura 
+console.log(listaToppings.innerHTML)
+
+//modificar el texto 
+
+const titulo1 = document.getElementById("titulo")
+
+titulo1.innerText = "Mis toppings favoritos"
+
+//modifica atributos de un elemento 
+
+const enlaces = document.getElementsByTagName("a")
+
+console.log(enlaces[0].setAttribute("href","https://www.freecodecamp.org"))
+
