@@ -49,7 +49,6 @@ const primerTopping = document.querySelector(".toppings")
 console.log(primerTopping)
 
 primerTopping.style.backgroundColor = "blue"
-primerTopping.style.color = "#f1f1f1";
 primerTopping.style.textTransform = "uppercase"
 
 console.log(primerTopping.style)
@@ -77,5 +76,46 @@ titulo1.innerText = "Mis toppings favoritos"
 
 const enlaces = document.getElementsByTagName("a")
 
+//Asignarle un valor a un elemento especifico .setattribute
+
 console.log(enlaces[0].setAttribute("href","https://www.freecodecamp.org"))
+
+
+//Clases===
+
+
+const primerTopping1 = document.querySelector('.toppings')
+
+console.log(primerTopping1.classList); 
+
+//agregar una clase a un elemento
+
+primerTopping1.classList.add('txtverde')
+
+//verificar si una clase sxiste
+
+console.log(primerTopping1.classList.contains('rojo'))
+
+//eliminar una clase
+
+primerTopping1.classList.remove('txtverde')
+
+//DOM
+
+//CREAR UN ELEMENTO DESDE CERO
+
+const listaDeToppings = document.getElementById('lista-toppings')
+
+const toppingNuevo = document.createElement('li')
+toppingNuevo.classList.add('toppings', 'rojo')
+toppingNuevo.innerText = 'Queso Extra'
+
+listaDeToppings.append(toppingNuevo)
+
+//REMOVER UN ELEMENTO
+
+toppingNuevo.remove()
+
+//Recorrer el DOM
+
 
