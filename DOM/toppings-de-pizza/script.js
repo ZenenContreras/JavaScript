@@ -116,6 +116,50 @@ listaDeToppings.append(toppingNuevo)
 
 toppingNuevo.remove()
 
-//Recorrer el DOM
+//RECORRER EL DOM
+
+//Obtener el elemento padre html 
+console.log(listaToppings.parentElement.parentElement)
+
+//obtener el elemento hijo html
+console.log(listaDeToppings.firstElementChild)
+
+//Obtener el elemento hermano
+console.log(listaDeToppings.previousElementSibling)
+
+//EVENTOS DEL DOM
+
+//target= elemento que va a recibir
+
+//a donde va a ir el usuario 
+
+
+//trigger = desencadenante
+// es el click
+
+//EVENTOS = FUNCION
+
+//event handler
+//funcion que se ejecuta cuando ocurre un evento 
+
+//event listener
+
+//EVENTOS EN HTML
+
+function mostrarclic(e){
+    console.log(e.target.innerText)
+}
+
+//ADDEVENLISTENER
+
+const topping2 = document.getElementsByClassName('toppings')
+
+for(const topping3 of topping2 ){
+    topping3.addEventListener('click' ,  (e) => {
+        console.log(e.target.innerText); 
+    })
+}
+
+topping2.addEventListener('click', mostrarclic)
 
 
